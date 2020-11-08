@@ -1,0 +1,137 @@
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포트폴리오</title>
+    <link rel="stylesheet" href="style2.css">
+    <script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div class="Header">
+        <div class="HeaderTitle">김광민 KWANG MIN KIM</div>
+        <div class="HeaderTitle" ><button id ="DarkButton">DarkMode🌙</button></div>
+    </div>
+    <div class="HeaderImage"></div>
+
+
+    <div class ="Tag">
+        <input id="tagInput" type="text" placeholder="태그를 입력하세요">
+    </div>
+
+
+
+    <div class="Chapter">
+      <div class ="MainTitle">김광민 KWANG MIN KIM</div>
+      <div class="SubTitle">프론트엔드 엔지니어</div>
+      <div class="Text">안녕하세요 김광민님의 두 번째 연습~ 화이팅이예요!</div>
+      <div class="ChapterTitle">
+        <div class ="ChapterSub">👮‍♂️Career</div>
+        <ul>
+            <li>육군 장교 전역 중위 김광민 (2018 ~ 2020 )</li>
+            <li>컴퓨터학과 졸업 (2013 ~ 2018)</li>
+            <li>2번째 해보는중 (2020.10.21)</li>
+        </ul>
+    </div>
+    <div class="Divider"></div>
+    <div class="ChapterTitle">
+        <div class ="ChapterSub">🏆Prize</div>
+        <ul>
+            <li>2014 제 3회 컴퓨터학과 소프트웨어 공모전 동상</li>
+            <li>2020 육군헌신상⭐⭐⭐</li>
+        </ul>
+    </div>
+    <div class="Divider"></div>
+    <div class="ChapterTitle">
+        <div class ="ChapterSub">📚Stack</div>
+        <div class ="Text">현재 배우고 있는 언어</div>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+    </div>
+    <div class="Divider"></div>
+    <div class="ChapterTitle">
+        <div class ="ChapterSub">🌎Web Project</div>
+        <div class ="Text">앞으로 만들고 싶은 프로젝트들</div>
+        <div class="Wrapper">
+            <div class="WrapperItem">
+            <div class="Item">개인</div>
+            <ul>
+                <li>포트폴리오</li>
+                <li>개인 일정</li>
+            </ul>
+        </div>
+        <div class="WrapperItem">
+            <div class="Item">팀</div>
+            <ul>
+                <li>더왈츠 홈페이지</li>
+                <li>쇼핑몰 홈페이지</li>
+            </ul>
+        </div>
+        </div>
+    </div>
+    <div class="Divider"></div>
+    <div class="ChapterTitle">
+        <div class ="ChapterSub">🎥Video Project</div>
+        <div class ="Text">즐겨보는 YouTube 프로그램은 뭔가요! 당근마켓은 어떻게 가야하나요? 마지막면접 팁을 주세요</div>
+        <div class="Wrapper">
+            <div class="WrapperItem">
+            <div class="Item">면접</div>
+            <div class="Video">
+            면접왕
+            <iframe src="https://www.youtube.com/embed/HVcej2mx3u4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="WrapperItem">
+            <div class="Item">운동</div>
+            <div class="Video">
+            등운동
+            <iframe src="https://www.youtube.com/embed/6Q6Yp4eDrIE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
+
+
+<script>
+    $(function() {
+        let isWhite=true;
+        $("#DarkButton").click(function() {
+            if(isWhite==true){
+                isWhite=false;
+                $("body").css("background-color", "black")
+                $("body").css("color","white")
+                $(".HeaderTitle").css("color","black")
+                $("#DarkButton").css("backgroundColor","lightgray")
+                $("#DarkButton").css("color","black")
+            }
+            else{
+                isWhite=true;
+                $("body").css("background-color", "white")
+                $("body").css("color","black")
+                $("#DarkButton").css("backgroundColor","black")
+                $("#DarkButton").css("color","lightgray")
+            }
+        });
+
+        $("#tagInput").keydown(function(e) {
+         if(e.keyCode==13){
+         let input_tag = $("#tagInput").val();
+         $("#tagInput").val("")
+
+         let div = $(`<div class="div1">${input_tag}</div>`);
+         $(".Tag").append(div)
+       }
+     }); 
+});
+
+
+</script>

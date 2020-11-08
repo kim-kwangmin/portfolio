@@ -1,0 +1,120 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+
+ul{
+    font-size: 0.9rem;
+}
+
+
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    
+}
+
+button{
+    border-radius: 1rem;
+    border:none;
+    background-color: black;
+    color:white;
+}
+
+button:hover{
+    background-color: lightgray;
+    color:black;
+}
+.Header{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position:fixed;
+    background-color: white;
+    padding: 0.6rem;
+    top:0;
+    right:0;
+    left:0;
+}
+
+.HeaderTitle{
+    font-size:0.9rem;
+}
+.HeaderImage{
+    height:30%;
+    background: rgb(231,238,174);
+    background: radial-gradient(circle, rgba(231,238,174,1) 0%, rgba(102,49,227,0.8396526232947036) 100%);
+}
+
+.Chapter{
+    padding: 2.8rem 5rem;
+}
+
+.MainTitle{
+    font-size:1.7rem;
+    font-weight:600;
+    padding-bottom: 0.9rem;
+}
+
+.SubTitle{
+    font-size:1.3rem;
+    font-weight:500;
+    
+
+}
+
+.Text{
+    font-size:0.9rem;
+    padding-top: 0.6rem;
+
+}
+
+.ChapterSub{
+    font-weight:bold;
+    padding-top:0.6rem;
+}
+
+.Divider{
+    border-bottom:1px solid lightgray;
+    margin: 1rem 0;
+}
+
+.Wrapper{ 
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top:0.6rem;
+    
+}
+
+.WrapperItem{
+    width:50%;
+}
+.Item{
+    font-weight: bold;
+
+}
+
+.Video{
+    display:flex;
+    flex-direction: column;
+    padding-top:0.6rem;
+    width:50%;
+}
+
+.Tag{
+    display: flex;
+    flex-direction: row;
+}
+
+#tagInput{
+    border-radius: 1rem;
+    margin-top:0.5rem;
+    border:none;
+    
+}
+
+.div1{
+    margin:0.3rem 0.3rem;
+    border:1px solid navy;
+    border-radius: 1rem;
+    background-color: lightcyan;
+    padding:0.3rem;
+}
